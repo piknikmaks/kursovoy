@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дім електрики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="logo/png" href="img/Logo-small.png">
+    <script src="log-in.js"></script>
+    <script src="password.js"></script>
+    <script src="reg-in.js"></script>
+    <script src="cabinet.js"></script> 
+</head>
+
+<body class="main-body">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="main.html"><img src="img/Logo.png" alt=""></a>
+            </div>
+            <div class="header-top-menu">
+                <p class="header-top-menu-text-1">Про нас</p>
+                <a href="contacts.html"><p class="header-top-menu-text-2">Контакти</p></a>
+                <p class="header-top-menu-text-3">Доставка і оплата</p>
+                <p class="header-top-menu-text-4">Корисна інформація</p>
+                <img class="header-top-menu-shape" src="img/Shape-grey.png">
+            </div>
+            <div class="header-top-phone">
+                <img class="header-top-phone-img" src="img/number.png">
+                <p class="header-top-phone-text">+38 (067) 505-02-89</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-cart">
+                <p class="header-bottom-cart-text">Кошик</p>
+                <img class="header-bottom-cart-img" src="img/Cart.png">
+                <div class="header-bottom-cart-rectangle"></div>
+            </div>
+            <div class="header-bottom-lang">
+                <img class="header-bottom-lang-shape" src="img/Shape.png">
+                <p class="header-bottom-lang-text">Укр</p>
+            </div>
+            <div class="header-bottom-user">
+                <p class="header-bottom-user-text">С</p>
+                <div class="header-bottom-user-eclipse"></div>
+            </div>
+            <div class="header-bottom-login">
+                <p class="header-bottom-login-text" onclick="openLogIn()">Увійти</p>
+                <div class="header-bottom-login-rectangle"></div>
+            </div>
+            <div class="header-bottom-search">
+                <img class="header-bottom-search-img" src="img/Search icon.png">
+                <div class="header-bottom-search-rectangle"></div>
+            </div>
+            <a href="main-menu.html"><div class="header-bottom-category">
+                <img class="header-bottom-category-shape" src="img/Shape.png">
+                <img class="header-bottom-category-img" src="img/Categoory.png">
+                <div class="header-bottom-category-rectangle"></div>
+                <p class="header-bottom-category-text">Каталог товарів</p>
+            </div></a>
+            <div class="header-bottom-rectangle"></div>
+        </div>
+        <div class="header-ractangle"></div>
+    </div>
+    <div class="main-page">
+        <div class="left-side">
+            <a href="lightning.html">
+                <div class="lightning">
+                    <div class="lightning-image"></div>
+                    <p class="lightning-text">Блискавкозахист <br>та заземлення</p>
+                    <div class="lightning-shape"></div>
+                </div>
+            </a>
+            <a href="installation.html">
+                <div class="installation">
+                    <div class="installation-image"></div>
+                    <p class="installation-text">Вироби для монтажу</p>
+                    <div class="installation-shape"></div>
+                </div>
+            </a>
+            <a href="laying.html">
+                    <div class="laying">
+                    <div class="laying-image"></div>
+                    <p class="laying-text">Для прокладки кабелю</p>
+                    <div class="laying-shape"></div>
+                </div>
+            </a>
+            <a href="climate.html">
+                <div class="climate">
+                    <div class="climate-image"></div>
+                    <p class="climate-text">Кліматичне обладнання</p>
+                    <div class="climate-shape"></div>
+                </div>
+            </a>
+            <a href="tools.html">
+                <div class="tools">
+                    <div class="tools-image"></div>
+                    <p class="tools-text">Iнструменти</p>
+                    <div class="tools-shape"></div>
+                </div>
+            </a>
+            <a href="wire.html">
+                <div class="wire">
+                    <div class="wire-image"></div>
+                    <p class="wire-text">Кабель, провід</p>
+                    <div class="wire-shape"></div>
+                </div>
+            </a>
+            <a href="switching.html">
+                <div class="switching">
+                    <div class="switching-image"></div>
+                    <p class="switching-text">Комутаційне обладнання</p>
+                    <div class="switching-shape"></div>
+                </div>
+            </a>
+            <a href="modular.html">
+                <div class="modular">
+                    <div class="modular-image"></div>
+                    <p class="modular-text">Модульне обладнання</p>
+                    <div class="modular-shape"></div>
+                </div>
+            </a>
+            <a href="stabilizers.html">
+                <div class="stabilizers">
+                    <div class="stabilizers-image"></div>
+                    <p class="stabilizers-text">Стабілізатори напруги</p>
+                    <div class="stabilizers-shape"></div>
+                </div>
+            </a>
+            <a href="devices.html">
+                <div class="devices">
+                    <div class="devices-image"></div>
+                    <p class="devices-text">Прилади обліку <br>та контролю</p>
+                    <div class="devices-shape"></div>
+                </div>
+            </a>
+            <a href="relay.html">
+                <div class="relay">
+                    <div class="relay-image"></div>
+                    <p class="relay-text">Реле контролю <br>та управління</p>
+                    <div class="relay-shape"></div>
+                </div>
+            </a>
+            <a href="products.html">
+                <div class="products">
+                    <div class="products-image"></div>
+                    <p class="products-text">Світлотехнічна продукція</p>
+                    <div class="products-shape"></div>
+                </div>
+            </a>
+            <a href="equipment.html">
+                <div class="equipment">
+                    <div class="equipment-image"></div>
+                    <p class="equipment-text">Силове обладнання</p>
+                    <div class="equipment-shape"></div>
+                </div>
+            </a>
+            <a href="connectors.html">
+                <div class="connectors">
+                    <div class="connectors-image"></div>
+                    <p class="connectors-text">Електроустановлювальні вироби, силові роз’єми,  подовжувачі</p>
+                    <div class="connectors-shape"></div>
+                </div>
+            </a>
+            <a href="cabinets.html">
+                <div class="cabinets">
+                    <div class="cabinets-image"></div>
+                    <p class="cabinets-text">Шафи та корпуси</p>
+                    <div class="cabinets-shape"></div>
+                </div>
+            </a>
+            <a href="clothes.html">
+                <div class="clothes">
+                    <div class="clothes-image"></div>
+                    <p class="clothes-text">Спеціальний одяг</p>
+                    <div class="clothes-shape"></div>
+                </div>
+            </a>
+            <a href="power-supply.html">
+                <div class="power-supply">
+                    <div class="power-supply-image"></div>
+                    <p class="power-supply-text">Джерела безперебійного живлення</p>
+                    <div class="power-supply-shape"></div>
+                </div>
+            </a>
+            <a href="power-plants.html">
+                <div class="power-plants">
+                    <div class="power-plants-image"></div>
+                    <p class="power-plants-text">Електростанції</p>
+                    <div class="power-plants-shape"></div>
+                </div>
+            </a>
+        </div>
+        <div class="right-side">
+            <div class="two">
+              <div class="distribution-boxes">
+                <a href="*.html"><p class="title">Розподільчі коробки</p></a>
+                <a href="*.html"><p class="main-text">В цеглу, бетон</p></a>
+                <a href="*.html"><p class="main-text">У гіпсокартон</p></a>
+                <a href="*.html"><p class="main-text">Зовнішні / накладні</p></a>
+                <a href="*.html"><p class="main-text">Вологозахищені</p></a>
+            </div>
+            <div class="pg">
+                <a href="*.html"><p class="title">Кабельні введення PG, сальники</p></a>
+            </div>
+            <div class="combs-connected">
+                <a href="*.html"><p class="title">Гребінки сполучні</p></a>
+                <a href="*.html"><p class="main-text">Однополюсні</p></a>
+                <a href="*.html"><p class="main-text">Двополосні</p></a>
+                <a href="*.html"><p class="main-text">Триполюсні</p></a>
+                <a href="*.html"><p class="main-text">Вилкові</p></a>
+            </div>
+            <div class="couplings">
+                <a href="*.html"><p class="title">Муфти</p></a>
+            </div>
+            <div class="heat-shrinking">
+                <a href="*.html"><p class="title">Термозбіжні трубки</p></a>
+            </div>
+            <div class="sip">
+                <a href="*.html"><p class="title">Кріплення для СІП</p></a>
+            </div>
+            <div class="bus-insulators">
+                <a href="*.html"><p class="title">Ізолятори шинні (силові)</p></a>
+            </div>
+            <div class="insulating-tape">
+                <a href="*.html"><p class="title">Ізоляційна стрічка</p></a>
+            </div>
+          </div>
+            <div class="one">
+                <div class="tips">
+                    <a href="*.html"><p class="title">Кабельні наконечники</p></a>
+                    <a href="*.html"><p class="main-text">Наконечники-гільзи</p></a>
+                    <a href="*.html"><p class="main-text">Під опресування</p></a>
+                    <a href="*.html"><p class="main-text">Гільзи сполучні</p></a>
+                    <a href="*.html"><p class="main-text">Конектори</p></a>
+                </div>
+                <div class="terminals">
+                    <a href="*.html"><p class="title-two-strokes">Клеми Wago, колодки, клеми на <br> din-рейку</p></a>
+                    <a href="*.html"><p class="main-text">Клеми Wago</p></a>
+                    <a href="*.html"><p class="main-text">Мідь + алюміній</p></a>
+                    <a href="*.html"><p class="main-text">Клемні колодки, що діляться</p></a>
+                    <a href="*.html"><p class="main-text">Клеми на din-рейку</p></a>
+                </div>
+                <div class="screeds">
+                    <a href="*.html"><p class="title">Кабельні стяжки, хомути, дюбелі</p></a>
+                    <a href="*.html"><p class="main-text">Стяжки кабельні</p></a>
+                    <a href="*.html"><p class="main-text">Хомути з кільцем</p></a>
+                    <a href="*.html"><p class="main-text">Дюбель-ялинки</p></a>
+                    <a href="*.html"><p class="main-text">Клеми на din-рейку</p></a>
+                </div>
+                <div class="socket-boxes">
+                    <a class="socket-title" href="*.html"><p class="socket-title">Підрозетники, коробки настановні</p></a>
+                    <a href="*.html"><p class="main-text">В цеглу, бетон</p></a>
+                    <a href="*.html"><p class="main-text">У гіпсокартон</p></a>
+                    <a href="*.html"><p class="main-text">Італійський стандарт</p></a>
+                    <a href="*.html"><p class="main-text">Герметичні</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="log-in-pop-up">
+        <div class="log-in-pop-up-frame">
+            <div class="log-in-pop-up-frame-title">Вхід</div>
+            <div class="log-in-pop-up-frame-line-1"></div>
+            <div class="log-in-pop-up-frame-line-2"></div>
+            <form class="log-in-pop-up-frame-form-1">
+                <label for="email" class="log-in-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="log-in-pop-up-frame-form-2">
+                <label for="password" class="log-in-pop-up-frame-form-title">Пароль</label>
+                <input id="logInPassword" type="password" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="log-in-pop-up-frame-remember">
+                <div class="log-in-pop-up-frame-remember-rectangle" onclick="changeRemind()"></div>
+                <div class="log-in-pop-up-frame-remember-rectangle-img" onclick="changeRemind2()"></div>
+                <div class="log-in-pop-up-frame-remember-text">Запам’ятати мене</div>
+            </div>
+            <div class="log-in-pop-up-frame-password" onclick="changePassword()">
+                <img src="img/eye-svgrepo-com 1.png" id="eyeImg" alt="">
+            </div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeLogIn()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeLogIn()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="log-in-pop-up-frame-remind" onclick="openPasswordLog()">Нагадати пароль</div>
+            <div class="log-in-pop-up-frame-enter" onclick="closeLogIn()">Увійти</div>
+            <div class="log-in-pop-up-frame-sign-up" onclick="openSignUp()">Зареєструватись</div>
+            <div class="log-in-pop-up-frame-rectangle"></div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeLogIn()">
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeLogIn()"></div>
+    </div>
+    <div class="password-remind-pop-up">
+        <div class="password-remind-pop-up-frame">
+            <form class="password-remind-pop-up-frame-form">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closePassword()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closePassword()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closePassword()">
+            <div class="password-remind-pop-up-frame-line-1"></div>
+            <div class="password-remind-pop-up-frame-line-2"></div>
+            <div class="password-remind-pop-up-frame-enter" onclick="closePassword()">Отримати новий пароль</div>
+            <div class="password-remind-pop-up-frame-back" onclick="closePassOpenLog()">Я згадав свій пароль</div>
+            <div class="password-remind-pop-up-frame-title">Нагадати пароль</div>
+            <div class="password-remind-pop-up-frame-rectangle"></div>
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closePassword()"></div>
+    </div>
+    <div class="sign-up-pop-up">
+        <div class="sign-up-pop-up-frame">
+            <div class="sign-up-pop-up-frame-line-1"></div>
+            <div class="sign-up-pop-up-frame-line-2"></div>
+            <form class="sign-up-pop-up-frame-form-1">
+                <label for="name" class="password-remind-pop-up-frame-form-title">Ім'я</label>
+                <input id="SighUpName" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-2">
+                <label for="surname" class="password-remind-pop-up-frame-form-title">Прізвище</label>
+                <input id="SighUpSurname" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-3">
+                <label for="phone">Номер телефону</label>
+                <input id="phone" type="tel" value="+380 __ ___ __ __" pattern="^\+380(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" class="log-in-pop-up-frame-form-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-4">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта</label>
+                <input id="SighUpEmail" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-5">
+                <label for="password" class="password-remind-pop-up-frame-form-title">Придумайте пароль</label>
+                <input id="SighUpPassword" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="sign-up-pop-up-frame-button" onclick="closeSignUp()">Увійти</div>
+            <div class="sign-up-pop-up-frame-alt">* Реєструючись, ви погоджуєтеся з <a>умовами положення про обробку і захист персональних даних</a> та <a>угодою користувача</a></div>
+            <div class="sign-up-pop-up-frame-back" onclick="closeSignUpOpenLogIn()">Я вже зареєстрований</div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeSignUp()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeSignUp()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="sign-up-pop-up-frame-title">Peєстрація</div>
+            <div class="sign-up-pop-up-frame-rectangle"></div>
+
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeSignUp()">
+            
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeSignUp()"></div>
+
+    </div>
+</body>
+</html>

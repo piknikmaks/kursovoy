@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дім електрики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="logo/png" href="img/Logo-small.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="smaller-slider.js"></script>
+    <script src="slider.js"></script>
+    <script src="small-slider.js"></script>
+    <script src="log-in.js"></script>
+    <script src="password.js"></script>
+    <script src="reg-in.js"></script> 
+    <script>
+        function changeImage(imageName) {
+            var image = document.getElementById('myImage');
+            image.src = imageName;
+          }
+    </script>
+</head>
+
+<body class="menu-body">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="main.html"><img src="img/Logo.png" alt=""></a>
+            </div>
+            <div class="header-top-menu">
+                <p class="header-top-menu-text-1">Про нас</p>
+                <a href="contacts.html"><p class="header-top-menu-text-2">Контакти</p></a>
+                <p class="header-top-menu-text-3">Доставка і оплата</p>
+                <p class="header-top-menu-text-4">Корисна інформація</p>
+                <img class="header-top-menu-shape" src="img/Shape-grey.png">
+            </div>
+            <div class="header-top-phone">
+                <img class="header-top-phone-img" src="img/number.png">
+                <p class="header-top-phone-text">+38 (067) 505-02-89</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-cart">
+                <p class="header-bottom-cart-text">Кошик</p>
+                <img class="header-bottom-cart-img" src="img/Cart.png">
+                <div class="header-bottom-cart-rectangle"></div>
+            </div>
+            <div class="header-bottom-lang">
+                <img class="header-bottom-lang-shape" src="img/Shape.png">
+                <p class="header-bottom-lang-text">Укр</p>
+            </div>
+            <div class="header-bottom-user">
+                <p class="header-bottom-user-text">С</p>
+                <div class="header-bottom-user-eclipse"></div>
+            </div>
+            <div class="header-bottom-login" onclick="openLogIn()">
+                <p class="header-bottom-login-text">Увійти</p>
+                <div class="header-bottom-login-rectangle"></div>
+            </div>
+            <div class="header-bottom-search">
+                <img class="header-bottom-search-img" src="img/Search icon.png">
+                <div class="header-bottom-search-rectangle"></div>
+            </div>
+            <a href="main-menu.html"><div class="header-bottom-category">
+                <img class="header-bottom-category-shape" src="img/Shape.png">
+                <img class="header-bottom-category-img" src="img/Categoory.png">
+                <div class="header-bottom-category-rectangle"></div>
+                <p class="header-bottom-category-text">Каталог товарів</p>
+            </div></a>
+            <div class="header-bottom-rectangle"></div>
+        </div>
+        <div class="header-ractangle"></div>
+    </div>
+    <div class="main-page">
+        <div class="left-side">
+            <a href="lightning.html">
+                <div class="lightning">
+                    <div class="lightning-image"></div>
+                    <p class="lightning-text">Блискавкозахист <br>та заземлення</p>
+                    <div class="lightning-shape"></div>
+                </div>
+            </a>
+            <a href="installation.html">
+                <div class="installation">
+                    <div class="installation-image"></div>
+                    <p class="installation-text">Вироби для монтажу</p>
+                    <div class="installation-shape"></div>
+                </div>
+            </a>
+            <a href="laying.html">
+                    <div class="laying">
+                    <div class="laying-image"></div>
+                    <p class="laying-text">Для прокладки кабелю</p>
+                    <div class="laying-shape"></div>
+                </div>
+            </a>
+            <a href="climate.html">
+                <div class="climate">
+                    <div class="climate-image"></div>
+                    <p class="climate-text">Кліматичне обладнання</p>
+                    <div class="climate-shape"></div>
+                </div>
+            </a>
+            <a href="tools.html">
+                <div class="tools">
+                    <div class="tools-image"></div>
+                    <p class="tools-text">Iнструменти</p>
+                    <div class="tools-shape"></div>
+                </div>
+            </a>
+            <a href="wire.html">
+                <div class="wire">
+                    <div class="wire-image"></div>
+                    <p class="wire-text">Кабель, провід</p>
+                    <div class="wire-shape"></div>
+                </div>
+            </a>
+            <a href="switching.html">
+                <div class="switching">
+                    <div class="switching-image"></div>
+                    <p class="switching-text">Комутаційне обладнання</p>
+                    <div class="switching-shape"></div>
+                </div>
+            </a>
+            <a href="modular.html">
+                <div class="modular">
+                    <div class="modular-image"></div>
+                    <p class="modular-text">Модульне обладнання</p>
+                    <div class="modular-shape"></div>
+                </div>
+            </a>
+            <a href="stabilizers.html">
+                <div class="stabilizers">
+                    <div class="stabilizers-image"></div>
+                    <p class="stabilizers-text">Стабілізатори напруги</p>
+                    <div class="stabilizers-shape"></div>
+                </div>
+            </a>
+            <a href="devices.html">
+                <div class="devices">
+                    <div class="devices-image"></div>
+                    <p class="devices-text">Прилади обліку <br>та контролю</p>
+                    <div class="devices-shape"></div>
+                </div>
+            </a>
+            <a href="relay.html">
+                <div class="relay">
+                    <div class="relay-image"></div>
+                    <p class="relay-text">Реле контролю <br>та управління</p>
+                    <div class="relay-shape"></div>
+                </div>
+            </a>
+            <a href="products.html">
+                <div class="products">
+                    <div class="products-image"></div>
+                    <p class="products-text">Світлотехнічна продукція</p>
+                    <div class="products-shape"></div>
+                </div>
+            </a>
+            <a href="equipment.html">
+                <div class="equipment">
+                    <div class="equipment-image"></div>
+                    <p class="equipment-text">Силове обладнання</p>
+                    <div class="equipment-shape"></div>
+                </div>
+            </a>
+            <a href="connectors.html">
+                <div class="connectors">
+                    <div class="connectors-image"></div>
+                    <p class="connectors-text">Електроустановлювальні вироби, силові роз’єми,  подовжувачі</p>
+                    <div class="connectors-shape"></div>
+                </div>
+            </a>
+            <a href="cabinets.html">
+                <div class="cabinets">
+                    <div class="cabinets-image"></div>
+                    <p class="cabinets-text">Шафи та корпуси</p>
+                    <div class="cabinets-shape"></div>
+                </div>
+            </a>
+            <a href="clothes.html">
+                <div class="clothes">
+                    <div class="clothes-image"></div>
+                    <p class="clothes-text">Спеціальний одяг</p>
+                    <div class="clothes-shape"></div>
+                </div>
+            </a>
+            <a href="power-supply.html">
+                <div class="power-supply">
+                    <div class="power-supply-image"></div>
+                    <p class="power-supply-text">Джерела безперебійного живлення</p>
+                    <div class="power-supply-shape"></div>
+                </div>
+            </a>
+            <a href="power-plants.html">
+                <div class="power-plants">
+                    <div class="power-plants-image"></div>
+                    <p class="power-plants-text">Електростанції</p>
+                    <div class="power-plants-shape"></div>
+                </div>
+            </a>
+            <div class="slider-container">
+                <div class="menu">
+                <label class="slider-label" for="slide-dot-1"></label>
+                <label class="slider-label" for="slide-dot-2"></label>
+                <label class="slider-label" for="slide-dot-3"></label>
+                <label class="slider-label" for="slide-dot-4"></label>
+                <label class="slider-label" for="slide-dot-5"></label>
+                </div>
+                <input id="slide-dot-1" type="radio" name="slides" checked>
+                <div class="first-slide slide-1"></div>
+                <input id="slide-dot-2" type="radio" name="slides">
+                <div class="first-slide slide-2"></div>
+                <input id="slide-dot-3" type="radio" name="slides">
+                <div class="first-slide slide-3"></div>
+                <input id="slide-dot-4" type="radio" name="slides">
+                <div class="first-slide slide-4"></div>
+                <input id="slide-dot-5" type="radio" name="slides">
+                <div class="first-slide slide-5"></div>
+            </div>
+        </div></div>
+    <div class="second-screen">
+        <div class="second-screen-title-link">
+            <p class="second-screen-title-text">Знижки до - 50%</p>
+            <a href="all.html*"><p class="second-screen-link-text">Дивитись всі</p></a>
+            <div class="fourth-screen-title-link-list">
+                <div class="fourth-screen-title-link-list-rectangle"></div>
+                <img class="fourth-screen-title-link-list-shape-1" src="img/Shape-grey-4k.png">
+                <img class="fourth-screen-title-link-list-shape-2" src="img/Shape-grey-4k-90.png">
+                <div class="fourth-screen-title-link-list-partition"></div>
+            </div>
+        </div>
+        <div class="second-screen-item-1">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage9" src="img/auto-1p-16a-type-c-4,5kA.png">
+                <a href="*.html" class="screen-item-frame-text"><p>Авт.1п.16А типC 4,5кА Merlin Gerin, Schneider 11203</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage9('img/auto-1p-16a-type-c-4,5kA.png')"></button>
+                    <button class="slider-button" onclick="changeImage9('https://play-lh.googleusercontent.com/I0DQ619KnLMwLrgqn7md31HeuwwRntBsVOxm2qzNAwcmz_Zop5lQZ01_ul4poJwttg8')"></button>
+                    <button class="slider-button" onclick="changeImage9('img/poroshenko-loves-ukraine.gif')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">152 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-15%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">129 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-screen-item-1-rectangle"></div>
+        </div>
+        <div class="second-screen-item-2">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage10" src="img/generator-diesel-hyndai.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Генератор дизельний HYUNDAI Diesel DHY 8500LE</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage10('img/generator-diesel-hyndai.png')"></button>
+                    <button class="slider-button" onclick="changeImage10('https://i.pinimg.com/736x/d4/22/d8/d422d8153c7dd24695e09c76d6fa5e33.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage10('https://i.kym-cdn.com/entries/icons/original/000/044/326/feliznavidad.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">63 160 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-5%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">60 002 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-screen-item-2-rectangle"></div>
+        </div>
+        <div class="second-screen-item-3">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage11" src="img/automatic-off-promfactor.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Автоматический выключатель ПРОМФАКТОР EVO FB3-63 1P C 6A 10кА (FB2-63 10кА STANDART)</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage11('img/automatic-off-promfactor.png')"></button>
+                    <button class="slider-button" onclick="changeImage11('https://i.ytimg.com/vi/US1k1QYVwJw/maxresdefault.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage11('https://preview.redd.it/osa-bin-messi-the-biggest-terrorist-in-argetina-v0-v5z1uhy1gj1a1.jpg?width=640&crop=smart&auto=webp&s=f940103f0699b62d8794b6dffab0e78b77e381e5')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">104 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-25%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">78 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-screen-item-3-rectangle"></div>
+        </div>
+        <div class="second-screen-item-4">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage12" src="img/energy-stabilizer.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Стабилизатор напряжения Мережик 16-3х5.5 (3х25А)</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage12('img/energy-stabilizer.png')"></button>
+                    <button class="slider-button" onclick="changeImage12('https://i.ytimg.com/vi/HQLSqsqvY2A/maxresdefault.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage12('https://i.kym-cdn.com/photos/images/original/002/502/080/45d.png')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">34 990 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-10%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">31 491 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="second-screen-item-4-rectangle"></div>
+        </div>
+    </div>
+    <div class="third-screen">
+        <div class="third-screen-title-link">
+            <p class="third-screen-title-text">Новинки</p>
+            <a href="all.html*"><p class="third-screen-link-text">Усі новинки</p></a>
+            <div class="fourth-screen-title-link-list">
+                <div class="fourth-screen-title-link-list-rectangle"></div>
+                <img class="fourth-screen-title-link-list-shape-1" src="img/Shape-grey-4k.png">
+                <img class="fourth-screen-title-link-list-shape-2" src="img/Shape-grey-4k-90.png">
+                <div class="fourth-screen-title-link-list-partition"></div>
+            </div>
+        </div>
+        <div class="third-screen-item-1">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount-hidden" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage5" src="img/meter-three-phase.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Лічильник трифазний Енергоміра ЦЕ 6804 5-60А МР31</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage5('img/meter-three-phase.png')"></button>
+                    <button class="slider-button" onclick="changeImage5('https://s5o.ru/storage/simple/cyber/edt/ef/4b/41/21/cybereabd7189018.png')"></button>
+                    <button class="slider-button" onclick="changeImage5('https://i.ytimg.com/vi/1JNpmGvQ1sk/mqdefault.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price-hidden">
+                            <p class="screen-item-old-price-text">10$</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-99%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">1300 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                    </div>
+            </div>
+            <div class="third-screen-item-1-rectangle"></div>
+        </div>
+        <div class="third-screen-item-2">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage6" src="img/rechargeable-battery.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Акумуляторна батарея LogicPower LPM6-4.5</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage6('img/rechargeable-battery.png')"></button>
+                    <button class="slider-button" onclick="changeImage6('https://i.ytimg.com/vi/eNxsYlmPG5Y/hqdefault.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage6('https://memepedia.ru/wp-content/uploads/2023/03/1678388242003.png')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">254 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-5%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">241 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="third-screen-item-2-rectangle"></div>
+        </div>
+        <div class="third-screen-item-3">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount-hidden" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage7" src="img/charging-station-eco-flow.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Зарядна станція EcoFlow RIVER (EFRIVER600-EU)</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage7('img/charging-station-eco-flow.png')"></button>
+                    <button class="slider-button" onclick="changeImage7('https://preview.redd.it/you-stupid-ni-the-many-ls-of-peter-griffin-family-guy-v0-y2x62c2hb7qa1.jpeg?width=1920&format=pjpg&auto=webp&s=37991868518b719f72aaf57bbb97a89d72c7c120')"></button>
+                    <button class="slider-button" onclick="changeImage7('https://media.tenor.com/ruavyb59cOIAAAAC/gachi-gachiman.gif')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price-hidden">
+                            <p class="screen-item-old-price-text">254 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-5%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">241 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="third-screen-item-3-rectangle"></div>
+        </div>
+        <div class="third-screen-item-4">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage8" src="img/distribution-block-eti.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Блок розподільний ETI EDB-407 (1102303)</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage8('img/distribution-block-eti.png')"></button>
+                    <button class="slider-button" onclick="changeImage8('https://geekhero.ru/wp-content/uploads/2014/12/Benedict-and-agent-Classified-penguins-of-madagascar-37687766-456-600.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage8('https://pbs.twimg.com/media/B2o-OoGCEAIys5-.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">270 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-5%</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">256 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="third-screen-item-4-rectangle"></div>
+        </div>
+    </div>
+    <div class="fourth-screen">
+        <div class="fourth-screen-title-link">
+            <p class="fourth-screen-title-text">Хіти продажів</p>
+            <a href="all.html*"><p class="fourth-screen-link-text">Усі хіти продажів</p></a>
+            <div class="fourth-screen-title-link-list">
+                <div class="fourth-screen-title-link-list-rectangle"></div>
+                <img class="fourth-screen-title-link-list-shape-1" src="img/Shape-grey-4k.png">
+                <img class="fourth-screen-title-link-list-shape-2" src="img/Shape-grey-4k-90.png">
+                <div class="fourth-screen-title-link-list-partition"></div>
+            </div>
+        </div>
+        <div class="fourth-screen-item-1">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount-hidden" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage" src="img/Automatic-switch-Asko-UkrEM.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Автоматичний вимикач Аско УкрЕМ ВА-2017/B 1р 32А (A0010170054)</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage('img/Automatic-switch-Asko-UkrEM.png')"></button>
+                    <button class="slider-button" onclick="changeImage('https://look.com.ua/pic/201408/1920x1080/look.com.ua-109640.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage('https://factcheck.ge/storage/media/image/2022-09-13/0c742d90-3334-11ed-bde4-e132bd4b68ea.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <p class="screen-item-price-text">65 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-screen-item-1-rectangle"></div>
+        </div>
+
+        <div class="fourth-screen-item-2">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage2" src="img/generator-hyundai.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Генератор бензиновий HYUNDAI HHY 10050FE</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage2('img/generator-hyundai.png')"></button>
+                    <button class="slider-button" onclick="changeImage2('https://i.ytimg.com/vi/u5uQYgwQ_UU/maxresdefault.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage2('https://i.ytimg.com/vi/oqraiUyk2b0/maxresdefault.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">44 991 ₴</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-7 %</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">41 841 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-screen-item-2-rectangle"></div>
+        </div>
+
+        <div class="fourth-screen-item-3">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+            </div>
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage3" src="img/bagate-rele.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Багатофункціональний реле – MR-63A</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage3('img/bagate-rele.png')"></button>
+                    <button class="slider-button" onclick="changeImage3('https://i.ytimg.com/vi/gYToaNJJftw/mqdefault.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage3('https://i.ytimg.com/vi/ixtfbe1msd4/maxresdefault.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <p class="screen-item-price-text">1 134 ₴</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-screen-item-3-rectangle"></div>
+        </div>
+
+        <div class="fourth-screen-item-4">
+            <div class="screen-item-lables">
+                <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+            </div>
+            <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+            <div class="screen-item-frame">
+                <img class="screen-item-frame-img" id="myImage4" src="img/cabel-abbg-4x120.png">
+                <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Кабель АВВГ 4х120.0-1.0 силовий алюмінієвий</p></a>
+                <div class="screen-item-frame-slider-list">
+                    <button class="slider-button" onclick="changeImage4('img/cabel-abbg-4x120.png')"></button>
+                    <button class="slider-button" onclick="changeImage4('https://risovach.ru/upload/2017/05/mem/911--2-_146100361_orig_.jpg')"></button>
+                    <button class="slider-button" onclick="changeImage4('https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-2.jpg')"></button>
+                </div>
+                <div class="screen-item-price-cart">
+                    <div class="screen-item-price">
+                        <div class="screen-item-old-price">
+                            <p class="screen-item-old-price-text">406 ₴/m</p>
+                            <div class="screen-item-old-price-discount">
+                                <p class="screen-item-old-price-discount-text">-12 %</p>
+                            </div>
+                        </div>
+                        <p class="screen-item-price-text">358 ₴/m</p>
+                    </div>
+                    <div class="screen-item-cart">
+                        <a href="*.html"><img src="img/Cart-green.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-screen-item-4-rectangle"></div>
+        </div>
+
+    </div>
+    <div class="fifth-screen">
+        <div class="fifth-screen-title-link">
+            <p class="fifth-screen-title-text">Партнери (виробники)</p>
+            <a href="all.html*"><p class="fifth-screen-link-text">Усі виробники</p></a>
+        </div>
+        <div id="outer_container">
+            <div id="thumbScroller">
+                <div class="container">
+                    <div class="content">
+                        <div><a href="https://www.acko.ua/"><img src="img/logo_asko_100_png-851x335 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://www.eaton.com/ua/uk-ua.html"><img src="img/Eaton_Corporation_logo 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://www.se.com/ua/uk/"><img src="img/schneider-electric-vector-logo 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://www.philips.ua/"><img src="img/Philips_logo 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://uek.com.ua/"><img src="img/iek-logo-F2B03B239B-seeklogo 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://right-hausen.ua/"><img src="img/right-hausen-logo-150x150 1.png" class="thumb" /></a></div>
+                    </div>
+                    <div class="content">
+                        <div><a href="https://right-hausen.ua/"><img src="img/3256-colorilogoihorizontiua 1.png" class="thumb" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-screen-rectangle"></div>
+    </div>
+    <div class="sixth-screen">
+        <div class="sixth-screen-title">
+            <p class="sixth-screen-title-text">Інтернет-магазин електротоварів «Дім Електрики»</p>
+        </div>
+        <p class="sixth-screen-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Quisque non tellus orci ac auctor. At imperdiet dui accumsan sit amet nulla facilisi. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Libero id faucibus nisl tincidunt eget nullam non nisi. Est ante in nibh mauris. Tellus id interdum velit laoreet. Eu scelerisque felis imperdiet proin. Aliquet eget sit amet tellus cras. Luctus accumsan tortor posuere ac. Ultrices gravida dictum fusce ut. Nunc non blandit massa enim nec. Cursus vitae congue mauris rhoncus aenean vel elit.</p>
+        <p class="sixth-screen-main-text-2">Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Ut enim blandit volutpat maecenas. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. A erat nam at lectus urna duis. Rhoncus est pellentesque elit ullamcorper dignissim. At imperdiet dui accumsan sit amet nulla facilisi. Risus commodo viverra maecenas accumsan lacus vel. Id porta nibh venenatis cras. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Mi bibendum neque egestas congue quisque egestas diam in. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Est ultricies integer quis auctor.</p>
+    </div>
+    <div class="log-in-pop-up">
+        <div class="log-in-pop-up-frame">
+            <div class="log-in-pop-up-frame-title">Вхід</div>
+            <div class="log-in-pop-up-frame-line-1"></div>
+            <div class="log-in-pop-up-frame-line-2"></div>
+            <form class="log-in-pop-up-frame-form-1">
+                <label for="email" class="log-in-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="log-in-pop-up-frame-form-2">
+                <label for="password" class="log-in-pop-up-frame-form-title">Пароль</label>
+                <input id="logInPassword" type="password" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="log-in-pop-up-frame-remember">
+                <div class="log-in-pop-up-frame-remember-rectangle" onclick="changeRemind()"></div>
+                <div class="log-in-pop-up-frame-remember-rectangle-img" onclick="changeRemind2()"></div>
+                <div class="log-in-pop-up-frame-remember-text">Запам’ятати мене</div>
+            </div>
+            <div class="log-in-pop-up-frame-password" onclick="changePassword()">
+                <img src="img/eye-svgrepo-com 1.png" id="eyeImg" alt="">
+            </div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeLogIn()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeLogIn()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="log-in-pop-up-frame-remind" onclick="openPasswordLog()">Нагадати пароль</div>
+            <div class="log-in-pop-up-frame-enter" onclick="closeLogIn()">Увійти</div>
+            <div class="log-in-pop-up-frame-sign-up" onclick="openSignUp()">Зареєструватись</div>
+            <div class="log-in-pop-up-frame-rectangle"></div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeLogIn()">
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeLogIn()"></div>
+    </div>
+    <div class="password-remind-pop-up">
+        <div class="password-remind-pop-up-frame">
+            <form class="password-remind-pop-up-frame-form">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closePassword()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closePassword()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closePassword()">
+            <div class="password-remind-pop-up-frame-line-1"></div>
+            <div class="password-remind-pop-up-frame-line-2"></div>
+            <div class="password-remind-pop-up-frame-enter" onclick="closePassword()">Отримати новий пароль</div>
+            <div class="password-remind-pop-up-frame-back" onclick="closePassOpenLog()">Я згадав свій пароль</div>
+            <div class="password-remind-pop-up-frame-title">Нагадати пароль</div>
+            <div class="password-remind-pop-up-frame-rectangle"></div>
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closePassword()"></div>
+    </div>
+    <div class="sign-up-pop-up">
+        <div class="sign-up-pop-up-frame">
+            <div class="sign-up-pop-up-frame-line-1"></div>
+            <div class="sign-up-pop-up-frame-line-2"></div>
+            <form class="sign-up-pop-up-frame-form-1">
+                <label for="name" class="password-remind-pop-up-frame-form-title">Ім'я</label>
+                <input id="SighUpName" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-2">
+                <label for="surname" class="password-remind-pop-up-frame-form-title">Прізвище</label>
+                <input id="SighUpSurname" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-3">
+                <label for="phone">Номер телефону</label>
+                <input id="phone" type="tel" value="+380 __ ___ __ __" pattern="^\+380(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" class="log-in-pop-up-frame-form-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-4">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта</label>
+                <input id="SighUpEmail" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-5">
+                <label for="password" class="password-remind-pop-up-frame-form-title">Придумайте пароль</label>
+                <input id="SighUpPassword" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="sign-up-pop-up-frame-button" onclick="closeSignUp()">Увійти</div>
+            <div class="sign-up-pop-up-frame-alt">* Реєструючись, ви погоджуєтеся з <a>умовами положення про обробку і захист персональних даних</a> та <a>угодою користувача</a></div>
+            <div class="sign-up-pop-up-frame-back" onclick="closeSignUpOpenLogIn()">Я вже зареєстрований</div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeSignUp()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeSignUp()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="sign-up-pop-up-frame-title">Peєстрація</div>
+            <div class="sign-up-pop-up-frame-rectangle"></div>
+
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeSignUp()">
+            
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeSignUp()"></div>
+
+    </div>
+    <div class="footer">
+        <div class="logo-copyrights">
+            <div class="logo-footer">
+                <img src="img/Logo.png">
+            </div>
+            <div class="copyrights-footer">
+                <p>© Всі права захищені ТОВ «Науково-виробниче підприємство «Енерго-плюс», 2013–2022</p>
+            </div>
+        </div>
+
+        <div class="main-contacts-footer">
+            <p class="contacts-text">Контакти</p>
+            <p class="contacts-adress">Україна, м. Кременчук, <br>просп. Лесі Українки 138 </p>
+            <p class="contacts-number">+38 (067) 505-02-89</p>
+            <p class="contacts-email">info@dim-elektriki.com</p>
+        </div>
+
+        <div class="work-time">
+            <p class="work-time-text">Часи роботи</p>
+            <p class="work-timing">Пн-Пт: 10:00-17:00</p>
+            <p class="work-weekend">Сб: 10:00-13:00</p>
+            <p class="weekend">Нд: вихідний</p>
+            <a class="call" href="call.html"><p class="call">Зателефонувати Вам?</p></a>
+        </div>
+
+        <div class="social">
+            <p class="our-social">Ми у соцмережах</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/dim.elektriki/"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com/dim.elektriki.kremenchug/?hl=ru"><img src="img/instagram.png"></a>
+                <a href=""><img src="img/in.png"></a>
+            </div>
+        </div>
+
+        <div class="footer-rectangle"></div>
+    </div>
+</body>
+</html>

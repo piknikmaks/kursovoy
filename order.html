@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дім електрики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="logo/png" href="img/Logo-small.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="smaller-slider.js"></script>
+    <script src="slider.js"></script>
+    <script src="small-slider.js"></script>
+    <script src="check-mark.js"></script>
+    <script src="more.js"></script>
+    <script src="rating.js"></script>
+    <script src="underline.js"></script>
+    <script src="list.js"></script>
+    <script src="comment-rating.js"></script>
+    <script src="write-comment.js"></script>
+    <script src="amount.js"></script>
+    <script src="cart.js"></script>
+    <script src="phone.js"></script>
+    <script src="delivery-way.js"></script>
+    <script src="change-location.js"></script>
+    <script src="order-comm-pop-up.js"></script>
+    <script src="log-in.js"></script>
+    <script src="password.js"></script>
+    <script src="reg-in.js"></script>
+    <script src="cabinet.js"></script> 
+    <script>
+        function changeImage(imageName) {
+            var image = document.getElementById('myImage');
+            image.src = imageName;
+        }
+    </script>
+</head>
+
+<body class="order-body">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="main.html"><img src="img/Logo.png" alt=""></a>
+            </div>
+            <div class="header-top-menu">
+                <p class="header-top-menu-text-1">Про нас</p>
+                <a href="contacts.html"><p class="header-top-menu-text-2">Контакти</p></a>
+                <p class="header-top-menu-text-3">Доставка і оплата</p>
+                <p class="header-top-menu-text-4">Корисна інформація</p>
+                <img class="header-top-menu-shape" src="img/Shape-grey.png">
+            </div>
+            <div class="header-top-phone">
+                <img class="header-top-phone-img" src="img/number.png">
+                <p class="header-top-phone-text">+38 (067) 505-02-89</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-cart">
+                <p class="header-bottom-cart-text">Кошик</p>
+                <img class="header-bottom-cart-img" src="img/Cart.png">
+                <div class="header-bottom-cart-rectangle"></div>
+            </div>
+            <div class="header-bottom-lang">
+                <img class="header-bottom-lang-shape" src="img/Shape.png">
+                <p class="header-bottom-lang-text">Укр</p>
+            </div>
+            <div class="header-bottom-user">
+                <p class="header-bottom-user-text">С</p>
+                <div class="header-bottom-user-eclipse"></div>
+            </div>
+            <div class="header-bottom-login">
+                <p class="header-bottom-login-text" onclick="openLogIn()">Увійти</p>
+                <div class="header-bottom-login-rectangle"></div>
+            </div>
+            <div class="header-bottom-search">
+                <img class="header-bottom-search-img" src="img/Search icon.png">
+                <div class="header-bottom-search-rectangle"></div>
+            </div>
+            <a href="main-menu.html"><div class="header-bottom-category">
+                <img class="header-bottom-category-shape" src="img/Shape.png">
+                <img class="header-bottom-category-img" src="img/Categoory.png">
+                <div class="header-bottom-category-rectangle"></div>
+                <p class="header-bottom-category-text">Каталог товарів</p>
+            </div></a>
+            <div class="header-bottom-rectangle"></div>
+        </div>
+        <div class="header-ractangle"></div>
+    </div>
+    <div class="order-body-title">Оформлення Замовлення</div>
+    <div class="order-body-left-side">
+        <div class="order-body-left-side-rectangle"></div>
+        <div class="order-body-left-side-1">
+            <div class="order-body-left-side-number">1</div>
+            <div class="order-body-left-side-title">Контактна інформація</div>
+            <form class="order-body-left-side-form-1">
+                <label for="surname">Прізвище</label>
+                <input id="surname" type="text" maxlength="18" class="order-body-left-side-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="order-body-left-side-form-2">
+                <label for="orderName">Ім'я</label>
+                <input id="orderName" type="text" maxlength="18" class="order-body-left-side-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="order-body-left-side-form-3">
+                <label for="phone">Телефон</label>
+                <input id="phone" type="tel" value="+380 __ ___ __ __" pattern="^\+380(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" class="order-body-left-side-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="order-body-left-side-form-4">
+                <label for="mail">Електронна адреса</label>
+                <input id="mail" type="email" maxlength="18" class="order-body-left-side-input" spellcheck="false" lang="ua" required>
+            </form>
+        </div>
+        <div class="order-body-left-side-2">
+            <div class="order-body-left-side-number">2</div>
+            <div class="order-body-left-side-title">Спосіб доставки</div>
+            <div class="order-body-left-side-2-way-1" onclick="changeDot1()">
+                <div class="order-body-left-side-2-way-dot-grey-1"></div>
+                <div class="order-body-left-side-2-way-dot-green-1"></div>
+                <div class="order-body-left-side-2-way-text">Самовивіз з магазину у Кременчуці</div>
+            </div>
+            <div class="order-body-left-side-2-way-2" onclick="changeDot2()">
+                <div class="order-body-left-side-2-way-dot-grey-2"></div>
+                <div class="order-body-left-side-2-way-dot-green-2"></div>
+                <div class="order-body-left-side-2-way-text">Нова Пошта, адресна доставка</div>
+            </div>
+            <div class="order-body-left-side-2-way-3" onclick="changeDot3()">
+                <div class="order-body-left-side-2-way-dot-grey-3"></div>
+                <div class="order-body-left-side-2-way-dot-green-3"></div>
+                <div class="order-body-left-side-2-way-text">Нова Пошта, відділення</div>
+            </div>
+            <div class="order-body-left-side-2-city">
+                <div class="order-body-left-side-2-city-title">Ваше місто</div>
+                <div class="order-body-left-side-2-city-change" onclick="openList()">Змінити</div>
+                <input type="text" disabled value="Полтава" id="locationInput" class="order-body-left-side-2-city-input">
+                <div class="order-body-left-side-2-city-frame">
+                    <div class="order-body-left-side-2-city-list-title">Оберіть місто</div>
+                    <img class="order-body-left-side-2-city-list-close" onclick="closeList()" src="img/Close.png">
+                    <div class="order-body-left-side-2-city-list">
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation1()">Полтава</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation2()">Київ</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation3()">Харків</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation4()">Кременчук</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation5()">Запоріжжя</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation6()">Одеса</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation7()">Львів</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation8()">Вінниця</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation9()">Миколаїв</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation10()">Кривий Ріг</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeLocation10()">Кривий Ріг</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-body-left-side-2-department">
+                <div class="order-body-left-side-2-city-title">Відділення Нової Пошти</div>
+                <div class="order-body-left-side-2-city-change" onclick="openDepartment()">Змінити</div>
+                <input type="text" id="departmentInput" disabled value="вул. Ветеринарна, 22" class="order-body-left-side-2-city-input">
+                <div class="order-body-left-side-2-department-frame">
+                    <div class="order-body-left-side-2-city-list-title">Оберіть відділення</div>
+                    <img class="order-body-left-side-2-city-list-close" onclick="closeList()" src="img/Close.png">
+                    <div class="order-body-left-side-2-city-list">
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeKievDepartment1()">вул. Пирогівський шлях, 135</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeKievDepartment2()">вул. Богатирська, 11</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changeKievDepartment3()">вул. Калачівська, 13</div>
+                    </div>
+                </div>
+                <div class="order-body-left-side-2-department-frame-2">
+                    <div class="order-body-left-side-2-city-list-title">Оберіть відділення</div>
+                    <img class="order-body-left-side-2-city-list-close" onclick="closeList()" src="img/Close.png">
+                    <div class="order-body-left-side-2-city-list">
+                        <div class="order-body-left-side-2-city-list-part" onclick="changePoltavaDepartment1()">вул. Ветеринарна, 22</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changePoltavaDepartment2()">вул. Ковпака, 26</div>
+                        <div class="order-body-left-side-2-city-list-part" onclick="changePoltavaDepartment3()">вул. Лідова, 13</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-body-left-side-3">
+            <div class="order-body-left-side-number">3</div>
+            <div class="order-body-left-side-title">Спосіб оплати</div>
+            <div class="order-body-left-side-3-way-1" onclick="changeDot4()">
+                <div class="order-body-left-side-3-way-dot-grey-1"></div>
+                <div class="order-body-left-side-3-way-dot-green-1"></div>
+                <div class="order-body-left-side-3-way-text">Оплата при отриманні товару</div>
+            </div>
+            <div class="order-body-left-side-3-way-2" onclick="changeDot5()">
+                <div class="order-body-left-side-3-way-dot-grey-2"></div>
+                <div class="order-body-left-side-3-way-dot-green-2"></div>
+                <div class="order-body-left-side-3-way-text">Оплатити зараз</div>
+            </div>
+            <div class="order-body-left-side-3-way-3" onclick="changeDot6()">
+                <div class="order-body-left-side-3-way-dot-grey-3"></div>
+                <div class="order-body-left-side-3-way-dot-green-3"></div>
+                <div class="order-body-left-side-3-way-text">Безготівковий розрахунок для підприємств та ФОПів</div>
+            </div>
+
+        </div>
+        <div class="order-body-left-side-3-comm" onclick="addComment()">Додати коментар до замовлення</div>
+        <div class="order-body-left-side-4">
+            <div class="order-body-left-side-number">4</div>
+            <div class="order-body-left-side-title">Бажаєте зареєструватись?</div>
+            <div class="order-body-left-side-4-text">* Реєструючись, ви берете участь у програмі лояльності і вам будуть достіпні товари зі знижками</div>
+            <div class="order-body-left-side-4-way-1" onclick="changeDot7()">
+                <div class="order-body-left-side-4-way-dot-grey-1"></div>
+                <div class="order-body-left-side-4-way-dot-green-1"></div>
+                <div class="order-body-left-side-4-way-text">Так</div>
+            </div>
+            <div class="order-body-left-side-4-way-2" onclick="changeDot8()">
+                <div class="order-body-left-side-4-way-dot-grey-2"></div>
+                <div class="order-body-left-side-4-way-dot-green-2"></div>
+                <div class="order-body-left-side-4-way-text">Ні</div>
+            </div>
+        </div>
+    </div>
+    <div class="order-body-right-side">
+        <div class="order-body-right-side-frame">
+            <div class="order-body-right-side-frame-title">Ваше замовлення</div>
+            <img src="img/basket-grey.png" class="order-body-right-side-frame-img">
+            <div class="order-body-right-side-frame-line-1"></div>
+            <div class="order-body-right-side-frame-line-2"></div>
+            <div class="order-body-right-side-frame-line-3"></div>
+            <div class="order-body-right-side-frame-product">
+                <div class="order-body-right-side-frame-product-amount">
+                    <div class="order-body-right-side-frame-product-amount-rectangle"></div>
+                    <input id="productAmount" value="1" class="order-body-right-side-frame-product-amount-number">
+                    <img src="img/Plus-green.png" class="order-body-right-side-frame-product-amount-plus" onclick="increment()">
+                    <div class="order-body-right-side-frame-product-amount-minus" onclick="decrement()">
+                        <div class="order-body-right-side-frame-product-amount-line"></div>
+                    </div>
+                </div>
+                <img src="img/energy-stabilizer-reta-2-2.png" class="order-body-right-side-frame-product-img">
+                <div class="order-body-right-side-frame-product-title">Стабілізатор напруги RETA ННСТ-3x7000 SHTEEL</div>
+                <div class="order-body-right-side-frame-product-code">Код: 2049518</div>
+                <div class="order-body-right-side-frame-product-price">
+                    <div class="order-body-right-side-frame-product-price-text-1">34 990 ₴</div>
+                    <div class="order-body-right-side-frame-product-price-text-2">31 491 ₴</div>
+                </div>
+            </div>
+            <div class="order-body-right-side-frame-product-total">
+                <div class="order-body-right-side-frame-product-total-text">До сплати:</div>
+                <form action="">
+                    <input disabled id="priceOutput" value="31491" class="order-body-right-side-frame-product-total-input">
+                    <input onclick="orderConfirmed()" value="Замовлення підтверджую" type="button" id="*" class="order-body-right-side-frame-product-total-button">
+                </form>
+            </div>
+            <div class="order-body-right-side-frame-product-total-ua">₴</div>
+            <div class="order-body-right-side-frame-product-cost-1">
+                <div class="order-body-right-side-frame-product-cost-text-1">Вартість замовлення:</div>
+                <div class="order-body-right-side-frame-product-cost-text-2">31 491 ₴</div>
+            </div>
+            <div class="order-body-right-side-frame-product-cost-2">
+                <div class="order-body-right-side-frame-product-cost-text-1">Вартість доставки:</div>
+                <div class="order-body-right-side-frame-product-cost-text-2">120 ₴</div>
+            </div>          
+        </div>
+        <div class="screen-item-rectangle"></div>
+    </div>
+    <div class="order-pop-up">
+        <div class="product-pop-up-rectangle-1">
+            <div class="product-pop-up-text">Написати відгук</div>
+            <div class="product-pop-up-line"></div>
+            <img class="product-pop-up-close" src="img/Close.png" onclick="closeComment()">
+            <div class="product-pop-up-rating">
+                <div class="product-pop-up-rating-stars">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar1()" class="product-pop-up-rating-star-grey-1">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar2()" class="product-pop-up-rating-star-grey-2">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar3()" class="product-pop-up-rating-star-grey-3">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar4()" class="product-pop-up-rating-star-grey-4">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar5()" class="product-pop-up-rating-star-grey-5">
+                    <img src="img/big-star.png" onclick="changeYellowStar1()" class="product-pop-up-rating-star-1">
+                    <img src="img/big-star.png" onclick="changeYellowStar2()" class="product-pop-up-rating-star-2">
+                    <img src="img/big-star.png" onclick="changeYellowStar3()" class="product-pop-up-rating-star-3">
+                    <img src="img/big-star.png" onclick="changeYellowStar4()" class="product-pop-up-rating-star-4">
+                    <img src="img/big-star.png" onclick="changeYellowStar5()" class="product-pop-up-rating-star-5">
+                </div>
+                <p class="product-pop-up-rating-text-1">Поганий</p>
+                <p class="product-pop-up-rating-text-2">Так собі</p>
+                <p class="product-pop-up-rating-text-3">Нормальний</p>
+                <p class="product-pop-up-rating-text-4">Добрий</p>
+                <p class="product-pop-up-rating-text-5">Відмінний</p>
+            </div>
+            <p class="product-pop-up-warning">* Щоб ваш відгук або коментар пройшов модерацію і був опублікований, ознайомтесь, будь ласка, з <a class="product-pop-up-warning-hyperlink" href="*.html">нашими правилами</a>.</p>
+            <div class="product-pop-up-comment">
+                <p class="product-pop-up-comment-text">Ваш відгук</p>
+                <form class="product-pop-up-comment-review">
+                    <label for="name"></label>
+                    <textarea id="name" class="product-pop-up-comment-review-input" spellcheck="false" lang="ua"></textarea>
+                    <input value="Залишити відгук" type="submit" id="commentConf" class="product-pop-up-comment-review-button">
+                </form>
+            </div>
+        </div>
+        <div class="after-order-pop-up-rectangle" onclick="closeComment()"></div>
+    </div>
+    <div class="after-order-pop-up">
+        <div class="after-order-pop-up-frame">
+            <div class="after-order-pop-up-frame-title">Дякуємо,<br>що обрали Дім Електрики!</div>
+            <img class="after-order-pop-up-frame-close" src="img/Close.png" onclick="closeConfirmed()">
+            <div class="after-order-pop-up-frame-back"><a href="main.html">Повернутися до покупок</a></div>
+            <div class="after-order-pop-up-frame-number">Номер вашого замовлення</div>
+            <input type="text" id="orderId" disabled value="3578999" class="after-order-pop-up-frame-input">
+        </div>
+        <div class="after-order-pop-up-rectangle" onclick="closeConfirmed()"></div>
+    </div>
+    <div class="log-in-pop-up">
+        <div class="log-in-pop-up-frame">
+            <div class="log-in-pop-up-frame-title">Вхід</div>
+            <div class="log-in-pop-up-frame-line-1"></div>
+            <div class="log-in-pop-up-frame-line-2"></div>
+            <form class="log-in-pop-up-frame-form-1">
+                <label for="email" class="log-in-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="log-in-pop-up-frame-form-2">
+                <label for="password" class="log-in-pop-up-frame-form-title">Пароль</label>
+                <input id="logInPassword" type="password" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="log-in-pop-up-frame-remember">
+                <div class="log-in-pop-up-frame-remember-rectangle" onclick="changeRemind()"></div>
+                <div class="log-in-pop-up-frame-remember-rectangle-img" onclick="changeRemind2()"></div>
+                <div class="log-in-pop-up-frame-remember-text">Запам’ятати мене</div>
+            </div>
+            <div class="log-in-pop-up-frame-password" onclick="changePassword()">
+                <img src="img/eye-svgrepo-com 1.png" id="eyeImg" alt="">
+            </div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeLogIn()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeLogIn()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="log-in-pop-up-frame-remind" onclick="openPasswordLog()">Нагадати пароль</div>
+            <div class="log-in-pop-up-frame-enter" onclick="closeLogIn()">Увійти</div>
+            <div class="log-in-pop-up-frame-sign-up" onclick="openSignUp()">Зареєструватись</div>
+            <div class="log-in-pop-up-frame-rectangle"></div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeLogIn()">
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeLogIn()"></div>
+    </div>
+    <div class="password-remind-pop-up">
+        <div class="password-remind-pop-up-frame">
+            <form class="password-remind-pop-up-frame-form">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closePassword()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closePassword()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closePassword()">
+            <div class="password-remind-pop-up-frame-line-1"></div>
+            <div class="password-remind-pop-up-frame-line-2"></div>
+            <div class="password-remind-pop-up-frame-enter" onclick="closePassword()">Отримати новий пароль</div>
+            <div class="password-remind-pop-up-frame-back" onclick="closePassOpenLog()">Я згадав свій пароль</div>
+            <div class="password-remind-pop-up-frame-title">Нагадати пароль</div>
+            <div class="password-remind-pop-up-frame-rectangle"></div>
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closePassword()"></div>
+    </div>
+    <div class="sign-up-pop-up">
+        <div class="sign-up-pop-up-frame">
+            <div class="sign-up-pop-up-frame-line-1"></div>
+            <div class="sign-up-pop-up-frame-line-2"></div>
+            <form class="sign-up-pop-up-frame-form-1">
+                <label for="name" class="password-remind-pop-up-frame-form-title">Ім'я</label>
+                <input id="SighUpName" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-2">
+                <label for="surname" class="password-remind-pop-up-frame-form-title">Прізвище</label>
+                <input id="SighUpSurname" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-3">
+                <label for="phone">Номер телефону</label>
+                <input id="phone" type="tel" value="+380 __ ___ __ __" pattern="^\+380(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" class="log-in-pop-up-frame-form-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-4">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта</label>
+                <input id="SighUpEmail" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-5">
+                <label for="password" class="password-remind-pop-up-frame-form-title">Придумайте пароль</label>
+                <input id="SighUpPassword" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="sign-up-pop-up-frame-button" onclick="closeSignUp()">Увійти</div>
+            <div class="sign-up-pop-up-frame-alt">* Реєструючись, ви погоджуєтеся з <a>умовами положення про обробку і захист персональних даних</a> та <a>угодою користувача</a></div>
+            <div class="sign-up-pop-up-frame-back" onclick="closeSignUpOpenLogIn()">Я вже зареєстрований</div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeSignUp()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeSignUp()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="sign-up-pop-up-frame-title">Peєстрація</div>
+            <div class="sign-up-pop-up-frame-rectangle"></div>
+
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeSignUp()">
+            
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeSignUp()"></div>
+
+    </div>
+    <div class="order-footer">
+        <div class="category-logo-copyrights">
+            <div class="category-logo-footer">
+                <img src="img/Logo.png">
+            </div>
+            <div class="category-copyrights-footer">
+                <p>© Всі права захищені ТОВ «Науково-виробниче підприємство «Енерго-плюс», 2013–2022</p>
+            </div>
+        </div>
+        <div class="category-contacts-footer">
+            <p class="category-contacts-text">Контакти</p>
+            <p class="category-contacts-adress">Україна, м. Кременчук, <br>просп. Лесі Українки 138 </p>
+            <p class="category-contacts-number">+38 (067) 505-02-89</p>
+            <p class="category-contacts-email">info@dim-elektriki.com</p>
+        </div>
+
+        <div class="category-work-time">
+            <p class="category-work-time-text">Часи роботи</p>
+            <p class="category-work-timing">Пн-Пт: 10:00-17:00</p>
+            <p class="category-work-weekend">Сб: 10:00-13:00</p>
+            <p class="category-weekend">Нд: вихідний</p>
+            <a class="category-call" href="call.html"><p class="call">Зателефонувати Вам?</p></a>
+        </div>
+
+        <div class="category-social">
+            <p class="category-our-social">Ми у соцмережах</p>
+            <div class="category-icons">
+                <img src="img/facebook.png">
+                <img src="img/instagram.png">
+                <img src="img/in.png">
+            </div>
+        </div>
+        <div class="product-footer-rectangle"></div>
+    </div>
+</body>
+</html>

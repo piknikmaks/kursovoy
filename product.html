@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дім електрики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="logo/png" href="img/Logo-small.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="smaller-slider.js"></script>
+    <script src="slider.js"></script>
+    <script src="small-slider.js"></script>
+    <script src="check-mark.js"></script>
+    <script src="more.js"></script>
+    <script src="rating.js"></script>
+    <script src="underline.js"></script>
+    <script src="list.js"></script>
+    <script src="comment-rating.js"></script>
+    <script src="write-comment.js"></script>
+    <script src="amount.js"></script>
+    <script src="cart.js"></script>
+    <script src="log-in.js"></script>
+    <script src="password.js"></script>
+    <script src="reg-in.js"></script>
+    <script src="cabinet.js"></script> 
+    <script>
+        function changeImage(imageName) {
+            var image = document.getElementById('myImage');
+            image.src = imageName;
+        }
+    </script>
+</head>
+
+<body class="product-body">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="main.html"><img src="img/Logo.png" alt=""></a>
+            </div>
+            <div class="header-top-menu">
+                <p class="header-top-menu-text-1">Про нас</p>
+                <a href="contacts.html"><p class="header-top-menu-text-2">Контакти</p></a>
+                <p class="header-top-menu-text-3">Доставка і оплата</p>
+                <p class="header-top-menu-text-4">Корисна інформація</p>
+                <img class="header-top-menu-shape" src="img/Shape-grey.png">
+            </div>
+            <div class="header-top-phone">
+                <img class="header-top-phone-img" src="img/number.png">
+                <p class="header-top-phone-text">+38 (067) 505-02-89</p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-cart">
+                <p class="header-bottom-cart-text">Кошик</p>
+                <img class="header-bottom-cart-img" src="img/Cart.png">
+                <div class="header-bottom-cart-rectangle"></div>
+            </div>
+            <div class="header-bottom-lang">
+                <img class="header-bottom-lang-shape" src="img/Shape.png">
+                <p class="header-bottom-lang-text">Укр</p>
+            </div>
+            <div class="header-bottom-user">
+                <p class="header-bottom-user-text">С</p>
+                <div class="header-bottom-user-eclipse"></div>
+            </div>
+            <div class="header-bottom-login">
+                <p class="header-bottom-login-text" onclick="openLogIn()">Увійти</p>
+                <div class="header-bottom-login-rectangle"></div>
+            </div>
+            <div class="header-bottom-search">
+                <img class="header-bottom-search-img" src="img/Search icon.png">
+                <div class="header-bottom-search-rectangle"></div>
+            </div>
+            <a href="main-menu.html"><div class="header-bottom-category">
+                <img class="header-bottom-category-shape" src="img/Shape.png">
+                <img class="header-bottom-category-img" src="img/Categoory.png">
+                <div class="header-bottom-category-rectangle"></div>
+                <p class="header-bottom-category-text">Каталог товарів</p>
+            </div></a>
+            <div class="header-bottom-rectangle"></div>
+        </div>
+        <div class="header-ractangle"></div>
+    </div>
+    <div class="product-first-screen">
+
+        <p class="product-first-screen-text"><a class="category-first-screen-text-hyper" href="main.html">Головна</a> > <a class="category-first-screen-text-hyper" href="stabilizers.html">Стабілізатори напруги</a><a class="category-first-screen-text-hyper-2" href="stabilizers.html"> > Стабілізатор напруги RETA ННСТ-3x7000 SHTEEL</a></p>
+
+        <div class="product-first-screen-photos">
+            <div class="product-first-screen-slider-container">
+                <div class="product-first-screen-menu">
+                    <label class="product-first-screen-slider-label-1" onclick="changeBorder1()" for="slide-dot-1">
+                        <img src="img/energy-stabilizer-reta-2-2.png">
+                    </label>
+                    <label class="product-first-screen-slider-label-2" onclick="changeBorder2()" for="slide-dot-2">
+                        <img src="https://yt3.googleusercontent.com/QkQWo5Fc_TnQkMH6kqjGbkDoWldsufHZfXi09MiSfy6VtY_BiCCwMk44tiDQ5ovo9Q4XvskmHEw=s900-c-k-c0x00ffffff-no-rj">
+                    </label>
+                    <label class="product-first-screen-slider-label-3" onclick="changeBorder3()" for="slide-dot-3">
+                        <img src="https://kartinkof.club/uploads/posts/2022-03/1648213938_1-kartinkof-club-p-morgenshtern-rebenok-mem-1.jpg">
+                    </label>
+                    <label class="product-first-screen-slider-label-4" onclick="changeBorder4()" for="slide-dot-4">
+                        <img src="https://media.tenor.com/tGb1fXTQYIwAAAAd/chips.gif">
+                    </label>
+                    <label class="product-first-screen-slider-label-5" onclick="changeBorder5()" for="slide-dot-5">
+                        <img src="https://220volt.com.ua/uploads/gallery_photo/photo/0978/03.jpg">
+                    </label>
+                </div>
+                <div class="product-first-screen-slider-label-photos">
+                <input id="slide-dot-1" type="radio" name="slides" checked>
+                <div class="slide product-first-screen-slide-1"></div>
+                <input id="slide-dot-2" type="radio" name="slides">
+                <div class="slide product-first-screen-slide-2"></div>
+                <input id="slide-dot-3" type="radio" name="slides">
+                <div class="slide product-first-screen-slide-3"></div>
+                <input id="slide-dot-4" type="radio" name="slides">
+                <div class="slide product-first-screen-slide-4"></div>
+                <input id="slide-dot-5" type="radio" name="slides">
+                <div class="slide product-first-screen-slide-5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-first-screen-info">
+            <p class="product-first-screen-info-title">Стабілізатор напруги RETA ННСТ-3x7000 SHTEEL</p>
+            <div class="product-first-screen-info-availibility">
+                <p class="product-first-screen-info-availibility-text-1">Код: 2049518</p>
+                <p class="product-first-screen-info-availibility-text-2">Термін поставки 1 – 3 дні</p>
+                <p class="product-first-screen-info-availibility-text-3">В наявності</p>
+                <img class="product-first-screen-info-availibility-img" src="img/check-mark-product.png">
+            </div>
+            <div class="product-first-screen-info-informaiton">
+                <a class="product-first-screen-info-informaiton-one-click">Купити в 1 клік</a>
+                <button class="product-first-screen-info-informaiton-cart" onclick="makeOrder()">
+                    <p class="product-first-screen-info-informaiton-cart-text">Купити</p>
+                    <img class="product-first-screen-info-informaiton-cart-img" src="img/Cart.png">
+                </button>
+                <div class="product-first-screen-info-informaiton-price">
+                    <div class="product-first-screen-info-informaiton-old-price">
+                        <p class="product-first-screen-info-informaiton-old-price-text">34 990 ₴</p>
+                        <div class="product-first-screen-info-informaiton-old-price-discount">
+                            <p class="product-first-screen-info-informaiton-old-price-discount-text">-10%</p>
+                        </div>
+                    </div>
+                    <p class="product-first-screen-info-informaiton-price-text">31 491 ₴</p>
+                </div>
+            </div>
+            <div class="product-first-screen-info-rating">
+                <img src="img/star.png" class="product-first-screen-info-rating-star-1" onclick="changeRating1()">
+                <img src="img/star-2.png" class="product-first-screen-info-rating-star-1-1" onclick="changeStar1()">
+                <img src="img/star.png" class="product-first-screen-info-rating-star-2" onclick="changeRating2()">
+                <img src="img/star-2.png" class="product-first-screen-info-rating-star-2-2" onclick="changeStar2()">
+                <img src="img/star.png" class="product-first-screen-info-rating-star-3" onclick="changeRating3()">
+                <img src="img/star-2.png" class="product-first-screen-info-rating-star-3-3" onclick="changeStar3()">
+                <img src="img/star.png" class="product-first-screen-info-rating-star-4" onclick="changeRating4()">
+                <img src="img/star-2.png" class="product-first-screen-info-rating-star-4-4" onclick="changeStar4()">
+                <img src="img/star.png" class="product-first-screen-info-rating-star-5" onclick="changeRating5()">
+                <img src="img/star-2.png" class="product-first-screen-info-rating-star-5-5" onclick="changeStar5()">
+                <p class="product-first-screen-info-rating-text">7 відгуків</p>
+            </div>
+            <div class="product-first-screen-info-delivery">
+                <p class="product-first-screen-info-delivery-text-1">Доставка</p>
+                <p class="product-first-screen-info-delivery-text-2">Київ</p>
+                <img src="img/location-svgrepo-com (2) 1.png" class="product-first-screen-info-delivery-img">
+            </div>
+            <div class="product-first-screen-info-delivery-options">
+                <button class="product-first-screen-info-delivery-option" onclick="chooseWay1()">
+                    <img class="product-first-screen-info-delivery-option-img" src="img/">
+                    <p class="product-first-screen-info-delivery-option-1-text-1">Самовивіз з магазину</p>
+                    <p class="product-first-screen-info-delivery-option-1-text-2">Забрати сьогодні</p>
+                    <p class="product-first-screen-info-delivery-option-1-text-3">Безкоштовно</p>
+                    <div class="product-first-screen-info-delivery-option-rectangle-1"></div>
+                </button>
+                <button class="product-first-screen-info-delivery-option-2" onclick="chooseWay2()">
+                    <img class="product-first-screen-info-delivery-option-img" src="img/">
+                    <p class="product-first-screen-info-delivery-option-2-text-1">Нова Пошта, адресна доставка</p>
+                    <p class="product-first-screen-info-delivery-option-2-text-2">2-3 дні</p>
+                    <p class="product-first-screen-info-delivery-option-2-text-3">від 150 грн</p>
+                    <div class="product-first-screen-info-delivery-option-rectangle-2"></div>
+                </button>
+                <button class="product-first-screen-info-delivery-option-3" onclick="chooseWay3()">
+                    <img class="product-first-screen-info-delivery-option-img" src="img/">
+                    <p class="product-first-screen-info-delivery-option-3-text-1">Нова Пошта</p>
+                    <p class="product-first-screen-info-delivery-option-3-text-2">1-2 дня</p>
+                    <p class="product-first-screen-info-delivery-option-3-text-3">від 50 грн</p>
+                    <div class="product-first-screen-info-delivery-option-rectangle-3"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="product-second-screen">
+        <div class="product-second-screen-line">
+
+        </div>
+        <div class="product-second-screen-frame">
+            <div class="product-second-screen-frame-button-description" onclick="changeUnderline1()">Опис товару</div>
+            <div class="product-second-screen-frame-button-features" onclick="changeUnderline2()">Характеристики</div>
+            <div class="product-second-screen-frame-button-catalogs" onclick="changeUnderline3()">Каталоги</div>
+            <div class="product-second-screen-frame-button-reviews" onclick="changeUnderline4()">Відгуки</div>
+        </div>
+        <div class="product-second-screen-text-description">
+            <p>
+                При необхідності стабілізувати трифазну напругу найбільш простим способом є підключення навантаження через три однофазні стабілізатори відповідної потужності та точності, включених у конфігурацію "зірка". 
+            </p>
+            <p>
+                Однак існують прилади та обладнання, що не допускають повно-фазний режим живлення. У реальних умовах не виключені ситуації значного перекосу фаз, що може викликати захисне відключення одного із стабілізаторів, що призводить до відключення однієї із фаз. Для захисту від подібних ситуацій застосовується пристрій контролю фазної напруги - синхронізатор, який повністю відключає навантаження при пропаданні однієї з фаз. 
+            </p>
+            <p>
+                Для спрощення монтажу виробляються функціонально закінчені трифазні стабілізатори, виконані у вигляді стійки для підлоги. Окремі однофазні стабілізатори в ній виконані у вигляді виїмних блоків, причому їх параметри можуть відповідати однофазним будь-якої серії. Окремий виїмний блок є комутаційним. Опціонально в ньому може бути змонтований синхронізатор (пристрій захисту від повно-фазного режиму).
+            </p>
+            <p>
+                Підключення трифазного стабілізатора зводиться до приєднання до нього вхідного та вихідного трифазних кабелів.
+            </p>
+            <p>
+                <b>Всі стабілізатори ТМ "RETA" працюють у зеленому тарифі</b>
+            </p>
+            <p class="product-second-screen-text-title">
+                <b>Особливості стабілізатора напруги RETA ННСТ-3x6500 SHTEEL:</b>
+            </p>
+            <p>
+                Час реакції на зміну вхідної напруги – 20мс;
+            </p>
+            <p>
+                Цифровий вольтметр вхідної та вихідної напруги;
+            </p>
+            <p>
+                Цифровий вимірювач потужності, що споживається навантаженням (кВА);
+            </p>
+            <p>
+                Захист від підвищеної напруги;
+            </p>
+            <p>
+                Захист від перегріву;
+            </p>
+            <p>
+                Захист від навантаження;
+            </p>
+            <p>
+                Захист від короткого замикання;
+            </p>
+            <p>
+                Захист від підвищеної напруги на виході з апарату;
+            </p>
+            <p>
+                Затримка часу на включення 5-7 сек.;
+            </p>
+            <p>
+                Режим Транзит;
+            </p>
+            <p>
+                Коефіцієнт потужності 0,98;
+            </p>
+            <p>
+                Ступінь пилу/волого захищеності УХЛ42;
+            </p>
+            <p>
+                Вентилятор примусового охолодження;
+            </p>
+            <p>
+                Підключення до мережі – клемний з'єднувач.
+            </p>
+            <p>
+                Гарантія на всі стабілізатори при побутовому використанні</b> 60 місяців + 60 місяців безкоштовного постгарантійного обслуговування.
+            </p>
+            <p>
+                Гарантія на стабілізатори при промисловому використанні</b> 36 місяців + 36 місяців безкоштовного післягарантійного обслуговування.
+            </p>
+            <p>
+                Всі стабілізатори можуть за запитом комплектуватись блискавкозахистом.
+            </p>
+            <p>
+                При виробництві трансформатора може використовуватись мідь, алюміній або комбінація цих матеріалів. Можливі винятки, але тільки у випадку, якщо клієнт наполягає на певному виконанні.
+            </p>
+            <p>
+                Усі покращені моделі стабілізаторів, стабілізатори 20кВт, 25кВт, 35кВт та трифазні варіанти збираються на силових ключах SEMIKRON.
+            </p>
+            <p>
+                <b>Усі стабілізатори ТМ "ВФ РЕТА" працюють у "Зеленому тарифі"</b>
+            </p>
+        </div>
+        <div class="product-second-screen-text-features">
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ....................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Тип стабілізації: .......................................................................................................................................................................... <b>Симисторні</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Зелений тариф: .......................................................................................................................................... <b>Робота із зеленим тарифом</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+                        <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-grey">
+                <div class="product-second-screen-text-features-grey-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+            <div class="product-second-screen-text-features-white">
+                <div class="product-second-screen-text-features-white-rectangle"></div>
+                <p class="product-second-screen-text-features-text">
+                    Виробник: ..................................................................................................................................................................................<b>Reta (Україна)</b></p>
+            </div>
+        </div>
+        <div class="product-second-screen-text-catalogs">
+            
+        </div>
+        <div class="product-second-screen-text-reviews">
+            <div class="product-second-screen-text-reviews-write">
+                <div class="product-second-screen-text-reviews-write-cart" onclick="writeComment()">
+                    <div class="product-second-screen-text-reviews-write-cart-rectangle"></div>
+                    <p class="product-second-screen-text-reviews-write-cart-text">Залишити відгук</p>
+                </div>
+                <p class="product-second-screen-text-reviews-write-text">Залиште свій відгук про цей товар</p>
+            </div>
+            <div class="product-second-screen-text-reviews-rating">
+                <div class="product-second-screen-text-reviews-rating-stars">
+                    <img src="img/star.png" class="product-second-screen-text-reviews-rating-star" >
+                    <img src="img/star.png" class="product-second-screen-text-reviews-rating-star" >
+                    <img src="img/star.png" class="product-second-screen-text-reviews-rating-star" >
+                    <img src="img/star.png" class="product-second-screen-text-reviews-rating-star" >
+                    <img src="img/star-2.png" class="product-second-screen-text-reviews-rating-star-grey" >
+                </div>
+                <p class="product-second-screen-text-reviews-rating-text">4.2 з 5</p>
+            </div>
+            <div class="product-second-screen-text-reviews-comments">
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+                <div class="product-second-screen-text-reviews-comments-review">
+                    <p class="product-second-screen-text-reviews-comments-review-name">Сергій Коношенков</p>
+                    <p class="product-second-screen-text-reviews-comments-review-comment">Гарний аргумент –  5 років гарантія!)</p>
+                    <div class="product-second-screen-text-reviews-comments-review-stars">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                        <img src="img/star.png" class="product-second-screen-text-reviews-rating-star">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-second-screen-rectangle"></div>
+    <div class="product-pop-up">
+        <div class="product-pop-up-rectangle-1">
+            <div class="product-pop-up-text">Написати відгук</div>
+            <div class="product-pop-up-line"></div>
+            <img class="product-pop-up-close" src="img/Close.png" onclick="closeComment()">
+            <div class="product-pop-up-rating">
+                <div class="product-pop-up-rating-stars">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar1()" class="product-pop-up-rating-star-grey-1">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar2()" class="product-pop-up-rating-star-grey-2">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar3()" class="product-pop-up-rating-star-grey-3">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar4()" class="product-pop-up-rating-star-grey-4">
+                    <img src="img/big-grey-star.png" onclick="changeGreyStar5()" class="product-pop-up-rating-star-grey-5">
+                    <img src="img/big-star.png" onclick="changeYellowStar1()" class="product-pop-up-rating-star-1">
+                    <img src="img/big-star.png" onclick="changeYellowStar2()" class="product-pop-up-rating-star-2">
+                    <img src="img/big-star.png" onclick="changeYellowStar3()" class="product-pop-up-rating-star-3">
+                    <img src="img/big-star.png" onclick="changeYellowStar4()" class="product-pop-up-rating-star-4">
+                    <img src="img/big-star.png" onclick="changeYellowStar5()" class="product-pop-up-rating-star-5">
+                </div>
+                <p class="product-pop-up-rating-text-1">Поганий</p>
+                <p class="product-pop-up-rating-text-2">Так собі</p>
+                <p class="product-pop-up-rating-text-3">Нормальний</p>
+                <p class="product-pop-up-rating-text-4">Добрий</p>
+                <p class="product-pop-up-rating-text-5">Відмінний</p>
+            </div>
+            <p class="product-pop-up-warning">* Щоб ваш відгук або коментар пройшов модерацію і був опублікований, ознайомтесь, будь ласка, з <a class="product-pop-up-warning-hyperlink" href="*.html">нашими правилами</a>.</p>
+            <div class="product-pop-up-comment">
+                <p class="product-pop-up-comment-text">Ваш відгук</p>
+                <form class="product-pop-up-comment-review">
+                    <label for="name"></label>
+                    <textarea id="name" class="product-pop-up-comment-review-input" spellcheck="false" lang="ua"></textarea>
+                    <input value="Залишити відгук" type="submit" id="*" class="product-pop-up-comment-review-button">
+                </form>
+            </div>
+        </div>
+        <div class="product-pop-up-rectangle-2" onclick="closeComment()"></div>
+    </div>
+    <div class="product-pop-cart" id="changeElement1">
+        <div class="product-pop-cart-frame" id="changeElement2">
+            <div class="product-pop-cart-frame-back"><a class="product-pop-up-warning-hyperlink" href="stabilizers.html">Повернутися до покупок</a></div>
+            <div class="product-pop-cart-frame-title">Кошик</div>
+            <img class="product-pop-cart-frame-close" src="img/Close.png" onclick="closeComment()">
+            <div class="product-pop-cart-frame-product">
+                <div class="product-pop-cart-frame-product-photoes">
+                    <div class="product-pop-cart-frame-product-rectangle"></div>
+                    <img src="img/energy-stabilizer-reta-2-2.png" class="product-pop-cart-frame-product-photo">
+                </div>
+                <div class="product-pop-cart-frame-product-text">Стабілізатор напруги RETA ННСТ-3x7000 SHTEEL</div>
+                <div class="product-pop-cart-frame-product-code">Код: 2049518</div>
+                <div class="product-pop-cart-frame-product-price">
+                    <div class="product-pop-cart-frame-product-old-price">34 990 ₴</div>
+                    <div class="product-pop-cart-frame-product-actual-price">31 491 ₴</div>
+                </div>
+                <div class="product-pop-cart-frame-product-amount">
+                    <div class="product-pop-cart-frame-product-amount-rectangle"></div>
+                    <input id="productAmount" value="1" class="product-pop-cart-frame-product-amount-number">
+                    <img src="img/Plus-green.png" class="product-pop-cart-frame-product-amount-plus" onclick="increment()">
+                    <div class="product-pop-cart-frame-product-amount-minus" onclick="decrement()">
+                        <div class="product-pop-cart-frame-product-amount-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-pop-cart-frame-total">
+                <p class="product-pop-cart-frame-total-text">Всього, без доставки:</p>
+                <input id="priceOutput" value="31491" disabled class="product-pop-cart-frame-total-price">
+                <p class="product-pop-cart-frame-total-ua">₴</p>
+            </div>
+            <a href="order.html"><button class="product-pop-cart-frame-cart" onclick="cartAmount()">Оформити замовлення</button></a>
+            <img src="img/basket-grey.png" class="product-pop-cart-frame-img-2">
+            <img src="img/basket-grey.png" class="product-pop-cart-frame-img">
+            <div class="product-pop-cart-frame-line-1"></div>
+            <div class="product-pop-cart-frame-line-2"></div>
+            <div class="product-pop-cart-frame-rectangle"></div>
+        </div>
+        <div class="product-pop-up-rectangle-2" onclick="closeComment()"></div>
+    </div>
+    <div class="product-third-screen">
+            <div class="product-third-screen-extra-rectangle-1"></div>
+            <div class="product-third-screen-extra-rectangle-2"></div>
+            <div class="fourth-screen-title-link">
+                <p class="fourth-screen-title-text">З цим товаром купують</p>
+                <div class="fourth-screen-title-link-list">
+                    <div class="fourth-screen-title-link-list-rectangle"></div>
+                    <div class="fourth-screen-title-link-list-button-1" onclick="changeProduct1()"></div>
+                    <div class="fourth-screen-title-link-list-button-2" onclick="changeProduct2()"></div>
+                    <div class="fourth-screen-title-link-list-button-3" onclick="changeProduct3()"></div>
+                    <div class="fourth-screen-title-link-list-button-4" onclick="changeProduct4()"></div>
+                    <img class="fourth-screen-title-link-list-shape-1" src="img/Shape-grey-4k.png">
+                    <img class="fourth-screen-title-link-list-shape-2" src="img/Shape-grey-4k-90.png">
+                    <div class="fourth-screen-title-link-list-partition"></div>
+                </div>
+            </div>
+            <div class="fourth-screen-item-1">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                    <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+                </div>
+                <img class="screen-item-lable-discount-hidden" src="img/discount-svgrepo-com 1.png">
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage" src="img/Automatic-switch-Asko-UkrEM.png">
+                    <a href="*.html" class="screen-item-frame-text">Автоматичний вимикач Аско УкрЕМ ВА-2017/B 1р 32А (A0010170054)</a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage('img/Automatic-switch-Asko-UkrEM.png')"></button>
+                        <button class="slider-button" onclick="changeImage('https://look.com.ua/pic/201408/1920x1080/look.com.ua-109640.jpg')"></button>
+                        <button class="slider-button" onclick="changeImage('https://factcheck.ge/storage/media/image/2022-09-13/0c742d90-3334-11ed-bde4-e132bd4b68ea.jpg')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <p class="screen-item-price-text">65 ₴</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-1-rectangle"></div>
+            </div>
+
+            <div class="fourth-screen-item-2">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-new" src="img/new-svgrepo-com 1.png">
+                    <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+                </div>
+                <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage2" src="img/generator-hyundai.png">
+                    <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Генератор бензиновий HYUNDAI HHY 10050FE</p></a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage2('img/generator-hyundai.png')"></button>
+                        <button class="slider-button" onclick="changeImage2('https://i.ytimg.com/vi/u5uQYgwQ_UU/maxresdefault.jpg')"></button>
+                        <button class="slider-button" onclick="changeImage2('https://i.ytimg.com/vi/oqraiUyk2b0/maxresdefault.jpg')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <div class="screen-item-old-price">
+                                <p class="screen-item-old-price-text">44 991 ₴</p>
+                                <div class="screen-item-old-price-discount">
+                                    <p class="screen-item-old-price-discount-text">-7 %</p>
+                                </div>
+                            </div>
+                            <p class="screen-item-price-text">41 841 ₴</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-2-rectangle"></div>
+            </div>
+    
+            <div class="fourth-screen-item-3">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+                </div>
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage3" src="img/bagate-rele.png">
+                    <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Багатофункціональний реле – MR-63A</p></a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage3('img/bagate-rele.png')"></button>
+                        <button class="slider-button" onclick="changeImage3('https://i.ytimg.com/vi/gYToaNJJftw/mqdefault.jpg')"></button>
+                        <button class="slider-button" onclick="changeImage3('https://i.ytimg.com/vi/ixtfbe1msd4/maxresdefault.jpg')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <p class="screen-item-price-text">1 134 ₴</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-3-rectangle"></div>
+            </div>
+    
+            <div class="fourth-screen-item-4">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-heat" src="img/new-svgrepo-com 2.png">
+                </div>
+                <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage4" src="img/cabel-abbg-4x120.png">
+                    <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Кабель АВВГ 4х120.0-1.0 силовий алюмінієвий</p></a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage4('img/cabel-abbg-4x120.png')"></button>
+                        <button class="slider-button" onclick="changeImage4('https://risovach.ru/upload/2017/05/mem/911--2-_146100361_orig_.jpg')"></button>
+                        <button class="slider-button" onclick="changeImage4('https://memepedia.ru/wp-content/uploads/2023/05/da-poebat-mne-gosling-2.jpg')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <div class="screen-item-old-price">
+                                <p class="screen-item-old-price-text">406 ₴/m</p>
+                                <div class="screen-item-old-price-discount">
+                                    <p class="screen-item-old-price-discount-text">-12 %</p>
+                                </div>
+                            </div>
+                            <p class="screen-item-price-text">358 ₴/m</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-4-rectangle"></div>
+            </div>
+            <div class="fourth-screen-item-5">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                    <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+                </div>
+                <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage9" src="img/auto-1p-16a-type-c-4,5kA.png">
+                    <a href="*.html" class="screen-item-frame-text"><p>Авт.1п.16А типC 4,5кА Merlin Gerin, Schneider 11203</p></a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage9('img/auto-1p-16a-type-c-4,5kA.png')"></button>
+                        <button class="slider-button" onclick="changeImage9('https://play-lh.googleusercontent.com/I0DQ619KnLMwLrgqn7md31HeuwwRntBsVOxm2qzNAwcmz_Zop5lQZ01_ul4poJwttg8')"></button>
+                        <button class="slider-button" onclick="changeImage9('img/poroshenko-loves-ukraine.gif')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <div class="screen-item-old-price">
+                                <p class="screen-item-old-price-text">152 ₴</p>
+                                <div class="screen-item-old-price-discount">
+                                    <p class="screen-item-old-price-discount-text">-15%</p>
+                                </div>
+                            </div>
+                            <p class="screen-item-price-text">129 ₴</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-5-rectangle"></div>
+            </div>
+            <div class="fourth-screen-item-6">
+                <div class="screen-item-lables">
+                    <img class="screen-item-lable-new-hidden" src="img/new-svgrepo-com 1.png">
+                    <img class="screen-item-lable-heat-hidden" src="img/new-svgrepo-com 2.png">
+                </div>
+                <img class="screen-item-lable-discount" src="img/discount-svgrepo-com 1.png">
+                <div class="screen-item-frame">
+                    <img class="screen-item-frame-img" id="myImage12" src="img/energy-stabilizer.png">
+                    <a href="*.html" class="screen-item-frame-text"><p class="screen-item-frame-text">Стабилизатор напряжения Мережик 16-3х5.5 (3х25А)</p></a>
+                    <div class="screen-item-frame-slider-list">
+                        <button class="slider-button" onclick="changeImage12('img/energy-stabilizer.png')"></button>
+                        <button class="slider-button" onclick="changeImage12('https://i.ytimg.com/vi/HQLSqsqvY2A/maxresdefault.jpg')"></button>
+                        <button class="slider-button" onclick="changeImage12('https://i.kym-cdn.com/photos/images/original/002/502/080/45d.png')"></button>
+                    </div>
+                    <div class="screen-item-price-cart">
+                        <div class="screen-item-price">
+                            <div class="screen-item-old-price">
+                                <p class="screen-item-old-price-text">34 990 ₴</p>
+                                <div class="screen-item-old-price-discount">
+                                    <p class="screen-item-old-price-discount-text">-10%</p>
+                                </div>
+                            </div>
+                            <p class="screen-item-price-text">31 491 ₴</p>
+                        </div>
+                        <div class="screen-item-cart">
+                            <a href="order.html"><img class="screen-item-cart-img" src="img/Cart-green.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-screen-item-6-rectangle"></div>
+            </div>
+    </div>
+    <div class="log-in-pop-up">
+        <div class="log-in-pop-up-frame">
+            <div class="log-in-pop-up-frame-title">Вхід</div>
+            <div class="log-in-pop-up-frame-line-1"></div>
+            <div class="log-in-pop-up-frame-line-2"></div>
+            <form class="log-in-pop-up-frame-form-1">
+                <label for="email" class="log-in-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="log-in-pop-up-frame-form-2">
+                <label for="password" class="log-in-pop-up-frame-form-title">Пароль</label>
+                <input id="logInPassword" type="password" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="log-in-pop-up-frame-remember">
+                <div class="log-in-pop-up-frame-remember-rectangle" onclick="changeRemind()"></div>
+                <div class="log-in-pop-up-frame-remember-rectangle-img" onclick="changeRemind2()"></div>
+                <div class="log-in-pop-up-frame-remember-text">Запам’ятати мене</div>
+            </div>
+            <div class="log-in-pop-up-frame-password" onclick="changePassword()">
+                <img src="img/eye-svgrepo-com 1.png" id="eyeImg" alt="">
+            </div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeLogIn()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeLogIn()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="log-in-pop-up-frame-remind" onclick="openPasswordLog()">Нагадати пароль</div>
+            <div class="log-in-pop-up-frame-enter" onclick="closeLogIn()">Увійти</div>
+            <div class="log-in-pop-up-frame-sign-up" onclick="openSignUp()">Зареєструватись</div>
+            <div class="log-in-pop-up-frame-rectangle"></div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeLogIn()">
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeLogIn()"></div>
+    </div>
+    <div class="password-remind-pop-up">
+        <div class="password-remind-pop-up-frame">
+            <form class="password-remind-pop-up-frame-form">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта або телефон</label>
+                <input id="logInEmail" type="email" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closePassword()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closePassword()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closePassword()">
+            <div class="password-remind-pop-up-frame-line-1"></div>
+            <div class="password-remind-pop-up-frame-line-2"></div>
+            <div class="password-remind-pop-up-frame-enter" onclick="closePassword()">Отримати новий пароль</div>
+            <div class="password-remind-pop-up-frame-back" onclick="closePassOpenLog()">Я згадав свій пароль</div>
+            <div class="password-remind-pop-up-frame-title">Нагадати пароль</div>
+            <div class="password-remind-pop-up-frame-rectangle"></div>
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closePassword()"></div>
+    </div>
+    <div class="sign-up-pop-up">
+        <div class="sign-up-pop-up-frame">
+            <div class="sign-up-pop-up-frame-line-1"></div>
+            <div class="sign-up-pop-up-frame-line-2"></div>
+            <form class="sign-up-pop-up-frame-form-1">
+                <label for="name" class="password-remind-pop-up-frame-form-title">Ім'я</label>
+                <input id="SighUpName" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-2">
+                <label for="surname" class="password-remind-pop-up-frame-form-title">Прізвище</label>
+                <input id="SighUpSurname" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-3">
+                <label for="phone">Номер телефону</label>
+                <input id="phone" type="tel" value="+380 __ ___ __ __" pattern="^\+380(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" class="log-in-pop-up-frame-form-input" spellcheck="false" lang="ua" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-4">
+                <label for="email" class="password-remind-pop-up-frame-form-title">Електронна пошта</label>
+                <input id="SighUpEmail" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <form class="sign-up-pop-up-frame-form-5">
+                <label for="password" class="password-remind-pop-up-frame-form-title">Придумайте пароль</label>
+                <input id="SighUpPassword" type="text" class="log-in-pop-up-frame-form-input" spellcheck="false" required>
+            </form>
+            <div class="sign-up-pop-up-frame-button" onclick="closeSignUp()">Увійти</div>
+            <div class="sign-up-pop-up-frame-alt">* Реєструючись, ви погоджуєтеся з <a>умовами положення про обробку і захист персональних даних</a> та <a>угодою користувача</a></div>
+            <div class="sign-up-pop-up-frame-back" onclick="closeSignUpOpenLogIn()">Я вже зареєстрований</div>
+            <div class="log-in-pop-up-frame-right">
+                <div class="log-in-pop-up-frame-right-title">Увійти як користувач</div>
+                <div class="log-in-pop-up-frame-right-item-1" onclick="closeSignUp()">
+                    <img src="img/google-logo.png" class="log-in-pop-up-frame-right-item-1-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Google</div>
+                </div>
+                <div class="log-in-pop-up-frame-right-item-2" onclick="closeSignUp()">
+                    <img src="img/facebook-logo.png" class="log-in-pop-up-frame-right-item-2-img">
+                    <div class="log-in-pop-up-frame-right-item-text">Facebook</div>
+                </div>
+            </div>
+            <div class="sign-up-pop-up-frame-title">Peєстрація</div>
+            <div class="sign-up-pop-up-frame-rectangle"></div>
+
+            <img src="img/Close.png" class="log-in-pop-up-frame-close" onclick="closeSignUp()">
+            
+        </div>
+        <div class="log-in-pop-up-rectangle-grey" onclick="closeSignUp()"></div>
+
+    </div>
+    <div class="product-footer">
+        <div class="category-logo-copyrights">
+            <div class="category-logo-footer">
+                <img src="img/Logo.png">
+            </div>
+            <div class="category-copyrights-footer">
+                <p>© Всі права захищені ТОВ «Науково-виробниче підприємство «Енерго-плюс», 2013–2022</p>
+            </div>
+        </div>
+        <div class="category-contacts-footer">
+            <p class="category-contacts-text">Контакти</p>
+            <p class="category-contacts-adress">Україна, м. Кременчук, <br>просп. Лесі Українки 138 </p>
+            <p class="category-contacts-number">+38 (067) 505-02-89</p>
+            <p class="category-contacts-email">info@dim-elektriki.com</p>
+        </div>
+
+        <div class="category-work-time">
+            <p class="category-work-time-text">Часи роботи</p>
+            <p class="category-work-timing">Пн-Пт: 10:00-17:00</p>
+            <p class="category-work-weekend">Сб: 10:00-13:00</p>
+            <p class="category-weekend">Нд: вихідний</p>
+            <a class="category-call" href="call.html"><p class="call">Зателефонувати Вам?</p></a>
+        </div>
+
+        <div class="category-social">
+            <p class="category-our-social">Ми у соцмережах</p>
+            <div class="category-icons">
+                <img src="img/facebook.png">
+                <img src="img/instagram.png">
+                <img src="img/in.png">
+            </div>
+        </div>
+        <div class="product-footer-rectangle"></div>
+    </div>
+</body>
+</html>
